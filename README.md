@@ -4,7 +4,6 @@ Single location to track and save changes to the ECU Map I am using with my Bad 
 
 ## Please Read Disclaimer Before Using This Map!
 
----
 ## Details about Hardware:
 
 * 1293cc A-Series Engine with 8.1:1 compressio ratio
