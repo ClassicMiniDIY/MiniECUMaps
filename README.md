@@ -2,9 +2,9 @@
 
 Single location to track and save changes to the ECU Map I am using with my Bad Wolf Turbo Build.
 
-## Please Read Disclaimer Before Using This Map!
+**Please Read Disclaimer Before Using This Map! - [Disclaimer](#disclaimer)**
 
-## Details about Hardware:
+### Details about Hardware:
 
 * 1293cc A-Series Engine with 8.1:1 compressio ratio
 * Turbo HIF44 Carburetor
