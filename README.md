@@ -1,4 +1,5 @@
-# Bad Wolf Mini Turbo Map
+# Classic Mini ECU Map
+## Bad Wolf Turbo Mini
 
 Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my turbo map. This repo includes two base maps. One for the **Haltech 750 Elite** which is a compelete fuel injected map. And one for the **DTA Fast ECU** which is an ignition only map. Both are public and can be used to help you get a spring board to start your mapping on your own car.
 
