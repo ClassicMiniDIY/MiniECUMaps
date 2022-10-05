@@ -25,7 +25,7 @@ Before using you must understand these are **NOT PLUG AND PLAY**. Both maps will
 ### Link to Download the Map:
 **NOTE:** Please read the disclaimer before using this map.
 
-**COMING SOON** - ~~Download the Zip~~
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases/tag/2.0.0)
 
 ---
 ## DTAFast Ignition Only Map
