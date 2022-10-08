@@ -1,9 +1,23 @@
 # Classic Mini ECU Map
-## Bad Wolf Turbo Mini
+## Base Maps
 
-Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my turbo map. This repo includes two base maps. One for the **Haltech 750 Elite** which is a compelete fuel injected map. And one for the **DTA Fast ECU** which is an ignition only map. Both are public and can be used to help you get a spring board to start your mapping on your own car.
+Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my base maps. **This repo includes 4 base maps.** All are public and can be used to help you get a spring board to start your mapping on your own car.
 
-Before using you must understand these are **NOT PLUG AND PLAY**. Both maps will require you to bring your car and have it properly configured on a dyno to get the best and safest results. After reading the below disclaimer the download links are located in each section below.
+* Haltech
+  * My Bad Wolf Turbo Map
+  * Base Version
+* Speeduino
+  * Base Version
+* MegaSquirt
+  * Base Version
+* Emerald K Series
+  * Base Version
+* DTAFast (Ignition Only)
+  * Base Version
+
+Before using you must understand these are **_NOT PLUG AND PLAY_**.
+
+All maps will require you to bring your car and have it properly configured on a dyno to get the best and safest results. After reading the below disclaimer the download links are located in each section below.
 
 **Please Read Disclaimer Before Using This Map! - [Disclaimer](#disclaimer)**
 
@@ -14,36 +28,30 @@ Before using you must understand these are **NOT PLUG AND PLAY**. Both maps will
 
 * 1293cc A-Series Engine with 8.1:1 compressio ratio
 * GT17 Turbocharger @ 15psi
-* Power Output: TBD
 * **CMDIY EFI Throttle Body** - [Link](https://store.classicminidiy.com/products/efi-throttle-body-hif44-replacement)
 * **Haltech 750 Elite ECU** - [Link](https://www.haltech.com/product/ht-150604-elite-750/)
 * **Haltech PD16 - PDM** - [Link](https://www.haltech.com/product/ht-198201-pd16-pdm/)
-* **Bosch Coil Ignitor** - [Link](https://efi-parts.co.uk/product/dual-channel-ignition-amplifier-ignitor/)
-* **Coil Pack** - [Link](https://www.med-engineering.co.uk/ancillaries/engine-management/engine-management-coil-pack)
-* **IAC Valve** - [Link](https://www.driftmotion.com/Driftmotion-Universal-Remote-Mount-ISC-p/dm3328.htm)
+
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
 ### Link to Download the Map:
 **NOTE:** Please read the disclaimer before using this map.
 
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases/tag/2.0.0)
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
+
+## Speeduino/MegaSquirt/Emerald EFI Map
+
+### Link to Download the Map:
+**NOTE:** Please read the disclaimer before using this map.
+
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
 ---
 ## DTAFast Ignition Only Map
-
-### Details about Hardware:
-
-* 1293cc A-Series Engine with 8.1:1 compressio ratio
-* GT17 Turbocharger @ 15psi
-* Turbo HIF44 Carburetor
-* Power Output: 173hp/175 ftlbs @ 15psi
-* **DTAFast S40i ECU** purchased from MED Engineering.
-  * Link to Kit: [MED Engineering - ECU Kit](https://www.med-engineering.co.uk/ancillaries/engine-management/med-ignition-management-kit)
-  * Link to ECU: [DTA Fast ECU - Standalone](https://www.dtafast.co.uk/dta_products/s40i-ecu-ignition-only/)
-
 ### Link to Download the Map:
 **NOTE:** Please read the disclaimer before using this map.
 
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/archive/refs/tags/1.2.zip)
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
 
 ---
