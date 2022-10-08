@@ -39,6 +39,7 @@ All maps will require you to bring your car and have it properly configured on a
 
 [Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
+---
 ## Speeduino/MegaSquirt/Emerald EFI Map
 
 ### Link to Download the Map:
