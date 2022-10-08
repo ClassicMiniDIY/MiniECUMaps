@@ -32,8 +32,6 @@ All maps will require you to bring your car and have it properly configured on a
 * **Haltech 750 Elite ECU** - [Link](https://www.haltech.com/product/ht-150604-elite-750/)
 * **Haltech PD16 - PDM** - [Link](https://www.haltech.com/product/ht-198201-pd16-pdm/)
 
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
-
 ### Link to Download the Map:
 **NOTE:** Please read the disclaimer before using this map.
 
