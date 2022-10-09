@@ -14,6 +14,8 @@ Welcome to the public record of the Bad Wolf Turbo Maps! This repository was cre
   * Base Version
 * DTAFast (Ignition Only)
   * Base Version
+* MegaJolt (Ignition Only)
+  * Base Version
 
 Before using you must understand these are **_NOT PLUG AND PLAY_**.
 
@@ -52,6 +54,12 @@ All maps will require you to bring your car and have it properly configured on a
 
 [Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
+---
+## MegaJolt Ignition Only Map
+### Link to Download the Map:
+**NOTE:** Please read the disclaimer before using this map.
+
+[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
 ---
 ### Disclaimer:
