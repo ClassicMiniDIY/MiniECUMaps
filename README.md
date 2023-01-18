@@ -1,21 +1,7 @@
 # Classic Mini ECU Map
 ## Base Maps
 
-Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my base maps. **This repo includes 4 base maps.** All are public and can be used to help you get a spring board to start your mapping on your own car.
-
-* Haltech
-  * My Bad Wolf Turbo Map
-  * Base Version
-* Speeduino
-  * Base Version
-* MegaSquirt
-  * Base Version
-* Emerald K Series
-  * Base Version
-* DTAFast (Ignition Only)
-  * Base Version
-* MegaJolt (Ignition Only)
-  * Base Version
+Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my base maps. **This repo includes multiple base maps.** All are public and can be used to help you get a spring board to start your mapping on your own car.
 
 Before using you must understand these are **_NOT PLUG AND PLAY_**.
 
