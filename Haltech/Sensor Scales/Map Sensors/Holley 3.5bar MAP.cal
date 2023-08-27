@@ -1,0 +1,7 @@
+%CALIBRATION%
+Type : 0
+Version : N/A
+InputUnits : 8
+OutputUnits : 3
+Voltages : 500, 4500
+Values : 20, 4463
