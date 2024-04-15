@@ -1,7 +1,0 @@
-%CALIBRATION%
-Type : 0
-Version : N/A
-InputUnits : 8
-OutputUnits : 5
-Voltages : 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500
-Values : 2331, 2550, 2768, 2987, 3206, 3424, 3643, 3862, 4081
