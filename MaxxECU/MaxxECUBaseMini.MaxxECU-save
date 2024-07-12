@@ -7,7 +7,7 @@
     <ECUFeatures>0</ECUFeatures>
     <ECUSerial>1F01TPO</ECUSerial>
     <EcuHWType>MINI</EcuHWType>
-    <Edittime>2024-05-22 14:57:50</Edittime>
+    <Edittime>2024-05-23 20:05:48</Edittime>
   </Fileinfo>
   <ECUSettingsItem name="IATSensor Input Voltage">4.66,4.491,4.241,3.897,3.471,2.986,2.483,2.019,1.594,1.249,0.962,0.743,0.573,0.444,0.349,0.273,0.217,0.172</ECUSettingsItem>
   <ECUSettingsItem name="IATSensor Output Temperature">-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100,110,120,130</ECUSettingsItem>
