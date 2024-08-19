@@ -5,51 +5,31 @@
 
 ## Base Maps
 
-Welcome to the public record of the Bad Wolf Turbo Maps! This repository was created to track all changes done to my base maps. **This repo includes multiple base maps.** All are public and can be used to help you get a spring board to start your mapping on your own car.
+Welcome to the public record of the Classic Mini ECU Maps! This repository was created to track all changes done to my base maps. **This repo includes multiple base maps.** All are public and can be used to help you get a spring board to start your mapping on your own car.
 
 Before using you must understand these are **_NOT PLUG AND PLAY_**.
 
 All maps will require you to bring your car and have it properly configured on a dyno to get the best and safest results. After reading the below disclaimer the download links are located in each section below.
 
+
+> While they are free to download, if you like what I am doing here, please consider purchasing a copy at the link below: https://store.classicminidiy.com/collections/efi-base-maps
+
 **Please Read Disclaimer Before Using This Map! - [Disclaimer](#disclaimer)**
 
 ---
+### Current Feature Support:
+| Features            | Haltech | Speeduino | MegaSquirt | Emerald | ECUMaster | MaxxECU | DTAFast | MegaJolt |
+|---------------------|---------|-----------|------------|---------|-----------|---------|---------|----------|
+| Ignition Map        |    ✅    |     ✅     |      ✅     |    ✅    |  **WIP**  | **WIP** |    ✅    |     ✅    |
+| Fuel Map            |    ✅    |     ✅     |      ✅     |    ✅    |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| VE Table            |    ✅    |     ✅     |      ✅     |  _N/A_  |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| Target AFR          |    ✅    |     ✅     |      ✅     |    ✅    |    ---    |   ---   |    ✅    |     ✅    |
+| Throttle Enrichment |    ✅    |     ❌     |      ❌     |  _N/A_  |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| Drive by Wire Ready |    ✅    |     ❌     |      ❌     |  _N/A_  |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| Boost Control Map   |    ✅    |     ❌     |      ❌     |  _N/A_  |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| Idle Map            |    ✅    |     ❌     |      ❌     |    ❌    |    ---    |   ---   |  _N/A_  |   _N/A_  |
+| 16V Engine Version  |    ✅    |     ✅     |      ✅     | **WIP** |    ---    |   ---   | **WIP** |  **WIP** |
 
-## Haltech EFI Map
-### Details about Hardware:
-
-* 1293cc A-Series Engine with 8.1:1 compressio ratio
-* GT17 Turbocharger @ 15psi
-* **CMDIY EFI Throttle Body** - [Link](https://store.classicminidiy.com/products/efi-throttle-body-hif44-replacement)
-* **Haltech 750 Elite ECU** - [Link](https://www.haltech.com/product/ht-150604-elite-750/)
-* **Haltech PD16 - PDM** - [Link](https://www.haltech.com/product/ht-198201-pd16-pdm/)
-
-### Link to Download the Map:
-**NOTE:** Please read the disclaimer before using this map.
-
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
-
----
-## Speeduino/MegaSquirt/Emerald EFI Map
-
-### Link to Download the Map:
-**NOTE:** Please read the disclaimer before using this map.
-
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
-
----
-## DTAFast Ignition Only Map
-### Link to Download the Map:
-**NOTE:** Please read the disclaimer before using this map.
-
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
-
----
-## MegaJolt Ignition Only Map
-### Link to Download the Map:
-**NOTE:** Please read the disclaimer before using this map.
-
-[Download the Zip](https://github.com/SomethingNew71/BadWolfTurboMap/releases)
 
 ---
 ### Disclaimer:
