@@ -9,7 +9,7 @@ Welcome to the public record of the Classic Mini ECU Maps! This repository was c
 
 Before using you must understand these are **_NOT PLUG AND PLAY_**.
 
-All maps will require you to bring your car and have it properly configured on a dyno to get the best and safest results. After reading the below disclaimer the download links are located in each section below.
+All maps will require you to bring your car and have it properly configured on a dyno to get the best and safest results. The repository is organized by ECU manufacturer with platform-specific directories containing the actual tuning files.
 
 
 > While they are free to download, if you like what I am doing here, please consider purchasing a copy at the link below: https://store.classicminidiy.com/collections/efi-base-maps
@@ -17,6 +17,30 @@ All maps will require you to bring your car and have it properly configured on a
 **Please Read Disclaimer Before Using This Map! - [Disclaimer](#disclaimer)**
 
 ---
+
+## Repository Structure
+
+### ECU Platform Directories
+- **Haltech/**: Haltech ECU maps and configurations
+  - `E550/`, `E750/`, `R3/`: Model-specific configurations (.nexmap files)
+  - `Reference Maps/`: Baseline reference configurations
+  - `Sensor Scales/`: Sensor calibration data
+  - `Wiring Diagrams/`: Electrical connection diagrams
+- **Speeduino-Megasquirt/**: Open-source ECU platform maps (.msq files)
+- **Emerald/**: Emerald ECU configurations (.map files)
+- **DTAFast - Ignition Only/**: DTA Fast ignition-only configurations (.map files)
+- **ECUMaster/**: ECUMaster platform configurations (work in progress)
+- **MaxxECU/**: MaxxECU platform configurations (work in progress)
+- **MegaJolt - Ignition Only/**: MegaJolt ignition system configurations
+
+### Technical Documentation
+- **diagrams/**: Wiring diagrams created with WireViz, organized by component type:
+  - `dbw-pedal/`: Drive-by-wire pedal connections
+  - `dbw-throttle/`: Drive-by-wire throttle body connections
+  - `tps/`: Throttle position sensor wiring
+  - `trigger-sensor/`: Engine position sensor connections
+  - `bosch/`: Bosch component wiring
+
 ### Current Feature Support:
 | Features            | Haltech | Speeduino | MegaSquirt | Emerald | ECUMaster | MaxxECU | DTAFast | MegaJolt |
 |---------------------|---------|-----------|------------|---------|-----------|---------|---------|----------|
@@ -29,6 +53,13 @@ All maps will require you to bring your car and have it properly configured on a
 | Boost Control Map   |    ✅    |     ❌     |      ❌     |  _N/A_  |    ---    |   ---   |  _N/A_  |   _N/A_  |
 | Idle Map            |    ✅    |     ❌     |      ❌     |    ❌    |    ---    |   ---   |  _N/A_  |   _N/A_  |
 | 16V Engine Version  |    ✅    |     ✅     |      ✅     | **WIP** |    ---    |   ---   | **WIP** |  **WIP** |
+
+### File Types
+- `.nexmap`: Haltech R3 tuning files
+- `.msq`: MegaSquirt/Speeduino tuning files
+- `.map`: Generic ECU map files (Emerald, DTA Fast)
+- `.yml/.yaml`: WireViz diagram source files
+- `.png/.svg`: Generated wiring diagrams
 
 
 ---
