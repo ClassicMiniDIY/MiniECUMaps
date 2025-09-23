@@ -40,7 +40,7 @@ This is primarily a documentation and configuration repository for automotive EC
 
 ### Wiring Diagram Creation
 
-Wiring diagrams in the `/diagrams` folder are created using WireViz, a tool for generating wiring harness documentation from YAML configuration files. WireViz produces both visual diagrams and bill of materials (BOM) for electrical connections.
+Wiring diagrams in the `/diagrams` folder are created using [WireViz](https://github.com/wireviz/WireViz), a tool for generating wiring harness documentation from YAML configuration files. WireViz produces both visual diagrams and bill of materials (BOM) for electrical connections.
 
 ## Platform Support Matrix
 

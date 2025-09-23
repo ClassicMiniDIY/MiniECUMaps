@@ -34,7 +34,7 @@ All maps will require you to bring your car and have it properly configured on a
 - **MegaJolt - Ignition Only/**: MegaJolt ignition system configurations
 
 ### Technical Documentation
-- **diagrams/**: Wiring diagrams created with WireViz, organized by component type:
+- **diagrams/**: Wiring diagrams created with [WireViz](https://github.com/wireviz/WireViz), organized by component type:
   - `dbw-pedal/`: Drive-by-wire pedal connections
   - `dbw-throttle/`: Drive-by-wire throttle body connections
   - `tps/`: Throttle position sensor wiring
@@ -58,7 +58,7 @@ All maps will require you to bring your car and have it properly configured on a
 - `.nexmap`: Haltech R3 tuning files
 - `.msq`: MegaSquirt/Speeduino tuning files
 - `.map`: Generic ECU map files (Emerald, DTA Fast)
-- `.yml/.yaml`: WireViz diagram source files
+- `.yml/.yaml`: [WireViz](https://github.com/wireviz/WireViz) diagram source files
 - `.png/.svg`: Generated wiring diagrams
 
 
