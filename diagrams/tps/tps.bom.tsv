@@ -1,0 +1,4 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 3 x 22 AWG	0.5	m	TPS_Harness
+2	Connector, Connector, 3-pin male, 3 pins	1		TPS
+3	Connector, Connector, ECU socket, 3 pins	1		ECU

@@ -1,0 +1,48 @@
+metadata:
+  title: DBW Pedal Wiring
+  description: 6-pin DBW pedal connection diagram
+
+connectors:
+  Pedal Sensor:
+    type: Nissan Pedal Connector
+    pincount: 6
+    pinlabels:
+      [
+        Sensor Ground,
+        Pedal Sensor 1,
+        Sensor Ground,
+        5v feed,
+        Pedal Sensor 2,
+        5v feed,
+      ]
+    pins: [A, B, C, D, E, F]
+    image:
+      src: cross-section.png
+      caption: Cross-section
+      height: 200
+
+  ECU:
+    type: ECU Pins
+    pincount: 6
+    pinlabels:
+      [
+        Sensor Ground,
+        Pedal Sensor (AVI),
+        Sensor Ground,
+        5v feed,
+        Pedal Sensor (AVI),
+        5v feed,
+      ]
+    pins: [A, B, C, D, E, F]
+    notes: Wire colors may vary depending on your ECU
+
+cables:
+  Harness:
+    wirecount: 6
+    colors: [BKWH, WHBN, BKWH, OG, WHBK, OG]
+    notes: Wire colors may vary depending on your ECU
+
+connections:
+  - - Pedal Sensor: [A, B, C, D, E, F]
+    - Harness: [1, 2, 3, 4, 5, 6]
+    - ECU: [A, B, C, D, E, F]

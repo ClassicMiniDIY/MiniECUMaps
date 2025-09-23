@@ -1,0 +1,43 @@
+metadata:
+  title: Trigger Sensor Wiring
+  description: 3-pin trigger sensor connection diagram
+
+connectors:
+  Sensor:
+    type: 3-pin Junior Timer
+    pincount: 3
+    pinlabels: [Signal Ground, 12V, 5V Signal]
+    pins: [1, 2, 3]
+    notes: Hall effect crank sensor
+    image:
+      src: cross-section.png
+      caption: Cross-section
+      height: 200
+
+  ECU:
+    type: ECU Connector
+    pincount: 2
+    pinlabels: [Signal Ground, Crank Trigger +]
+    pins: [1, 2]
+    notes: Note the signal ground pin is used not the battery ground. This is very important
+
+  Battery:
+    type: Switched input
+    pincount: 1
+    pinlabels: [12V Power]
+    pins: [1]
+    notes: Should be from switched ignition only 12v signal
+
+cables:
+  Harness:
+    wirecount: 3
+    colors: [BKWH, RD, YE]
+    notes: Colors may vary depending on wiring harness and ECU
+
+connections:
+  - - Sensor: [1, 2, 3]
+    - Harness: [1, 2, 3]
+  - - Harness: [1, 3]
+    - ECU: [1, 2]
+  - - Harness: 2
+    - Battery: 1

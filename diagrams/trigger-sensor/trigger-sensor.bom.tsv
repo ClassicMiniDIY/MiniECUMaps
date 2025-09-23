@@ -1,0 +1,5 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 3 wires	0	m	Harness
+2	Connector, 3-pin Junior Timer, 3 pins	1		Sensor
+3	Connector, ECU Connector, 2 pins	1		ECU
+4	Connector, Switched input, 1 pins	1		Battery

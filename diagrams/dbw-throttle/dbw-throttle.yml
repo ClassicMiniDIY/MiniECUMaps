@@ -1,0 +1,33 @@
+metadata:
+  title: DBW Throttle Body Wiring
+  description: 6-pin DBW throttle body connection diagram
+
+connectors:
+  Throttle:
+    type: 6-pin DBW Throttle
+    pincount: 6
+    pinlabels:
+      [DBW Motor -, Signal Ground, 5V, DBW Motor +, TPS Input 1, TPS Input 2]
+    pins: [1, 2, 3, 4, 5, 6]
+    image:
+      src: cross-section.png
+      caption: Cross-section
+      height: 200
+
+  ECU:
+    type: ECU Pins
+    pincount: 6
+    pinlabels:
+      [DBW 1 - HBO, Signal Ground, 5V, DBW 2 HBO, TPS 1 - AVI, TPS 2 - AVI]
+    pins: [1, 2, 3, 4, 5, 6]
+
+cables:
+  Harness:
+    wirecount: 6
+    colors: [BNBK, BKWH, OG, BNRD, WHBN, WHBK]
+    notes: Wire colors may vary depending on your ECU
+
+connections:
+  - - Throttle: [1, 2, 3, 4, 5, 6]
+    - Harness: [1, 2, 3, 4, 5, 6]
+    - ECU: [1, 2, 3, 4, 5, 6]

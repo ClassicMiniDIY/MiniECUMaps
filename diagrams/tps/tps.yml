@@ -1,0 +1,33 @@
+metadata:
+  title: TPS (Throttle Position Sensor) Wiring
+  description: 3-pin TPS connector to ECU wiring diagram
+
+connectors:
+  TPS:
+    type: Connector
+    subtype: 3-pin male
+    pinlabels: [5V - A, Signal GND - B, TPS Signal - C]
+    notes: Throttle Position Sensor
+    image:
+      src: cross-section.png
+      caption: Cross-section
+      height: 200
+
+  ECU:
+    type: Connector
+    subtype: ECU socket
+    pinlabels: [5V Supply, Signal Ground, TPS - AVI]
+    notes: Colors may vary depending on the manufacturer.
+
+cables:
+  TPS_Harness:
+    gauge: 22 AWG
+    length: 0.5 m
+    wirecount: 3
+    colors: [OG, BKWH, WHOG]
+    notes: Colors used may vary depending on the manufacturer.
+
+connections:
+  - - TPS: [1, 2, 3]
+    - TPS_Harness: [1, 2, 3]
+    - ECU: [1, 2, 3]
