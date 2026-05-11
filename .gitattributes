@@ -1,3 +1,6 @@
+haltech/R3/all-logs/**/*.csv filter=lfs diff=lfs merge=lfs -text
+haltech/R3/all-logs/**/*.hlgzip filter=lfs diff=lfs merge=lfs -text
+haltech/R3/all-logs/**/*.zip filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
 *.hlgzip filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
