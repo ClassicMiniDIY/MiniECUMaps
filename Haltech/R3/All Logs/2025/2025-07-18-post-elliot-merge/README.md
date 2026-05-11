@@ -1,17 +1,5 @@
-1133
-1132
-1131
-1130
-1129
-1128
-1127
-1126
-1125
-1124
-1123
-1122
-1121
-1120
-1119
-1118
-1117
+# 2025-07-18 — Post Elliot Merge
+
+PC logs captured after merging Elliot's tuning changes into the BadWolfTurbo R3 map.
+
+Each log session in this folder is a paired `.csv` (human-readable) + `.hlgzip` (Haltech NSP-importable archive) covering log indexes 1117–1133.
