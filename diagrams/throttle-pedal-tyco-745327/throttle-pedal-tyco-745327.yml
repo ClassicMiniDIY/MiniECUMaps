@@ -1,0 +1,55 @@
+metadata:
+  title: DBW Throttle Pedal Wiring — 6-pin Tyco 6-929264-1
+  description: Generic 6-pin drive-by-wire throttle pedal pinout with dual PPS (PPS1 + PPS2) for redundancy
+
+connectors:
+  Pedal:
+    type: DBW Throttle Pedal Connector
+    subtype: Tyco 6-929264-1 / Excel 745327
+    pincount: 6
+    pinlabels:
+      [
+        PPS2 +5V,
+        PPS1 +5V,
+        PPS1 Signal,
+        PPS1 Signal Ground,
+        PPS2 Signal Ground,
+        PPS2 Signal,
+      ]
+    pins: [1, 2, 3, 4, 5, 6]
+    image:
+      src: connector-pinout.jpeg
+      caption: Tyco 6-929264-1 / Excel 745327 — terminal view (pin 1 at right)
+      height: 220
+    notes: Two independent potentiometers (PPS1 and PPS2) share the pedal body. Each has its own +5V, signal, and signal ground back to the ECU for redundancy — never bridge the two sets.
+
+  ECU:
+    type: ECU
+    pincount: 6
+    pinlabels:
+      [
+        PPS2 +5V,
+        PPS1 +5V,
+        PPS1 Signal,
+        PPS1 Signal Ground,
+        PPS2 Signal Ground,
+        PPS2 Signal,
+      ]
+    pins: [1, 2, 3, 4, 5, 6]
+    notes: |
+      Signal Ground returns to the ECU sensor-ground pin — not chassis ground.
+      +5V feeds come from the ECU sensor-supply rail, not switched 12V.
+
+cables:
+  Harness:
+    wirecount: 6
+    gauge: 0.5 mm2
+    colors: [OG, OG, WH, BKWH, BKWH, WH]
+    notes: |
+      +5V = orange, Signal = white, Signal Ground = black/white.
+      Wire colors may vary depending on your ECU and harness build.
+
+connections:
+  - - Pedal: [1, 2, 3, 4, 5, 6]
+    - Harness: [1, 2, 3, 4, 5, 6]
+    - ECU: [1, 2, 3, 4, 5, 6]
