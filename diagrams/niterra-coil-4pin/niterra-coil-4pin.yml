@@ -1,0 +1,54 @@
+metadata:
+  title: Niterra 4-Pin Smart Coil Wiring
+  description: 4-pin connector pinout for Niterra (NGK) smart ignition coil with built-in igniter
+
+connectors:
+  Coil:
+    type: 4-pin Smart Coil
+    pincount: 4
+    pinlabels: [EST-, GND, BAT, EST+]
+    pins: [1, 2, 3, 4]
+    notes: |
+      EST- is sometimes labeled REF low — it is a ground reference back to the ECU,
+      not chassis ground. Keep it separate from pin 2 GND all the way to the ECU.
+    image:
+      src: connector-pinout.png
+      caption: 4-pin connector pinout (Niterra technical service)
+      height: 200
+
+  ECU:
+    type: ECU Connector
+    pincount: 2
+    pinlabels: [Ignition Signal Ground, EST Drive]
+    pins: [1, 2]
+    notes: EST- must return to the ECU signal ground, not chassis ground
+
+  Ground:
+    type: Chassis Ground
+    pincount: 1
+    pinlabels: [GND]
+    pins: [1]
+    notes: Clean chassis ground — short, direct, star-point preferred
+
+  Battery:
+    type: Switched 12V
+    pincount: 1
+    pinlabels: [BAT +12V]
+    pins: [1]
+    notes: Switched ignition feed, fused. Do NOT use constant battery.
+
+cables:
+  Harness:
+    wirecount: 4
+    colors: [YE, GY, RD, BU]
+    notes: Wire colors mirror the Niterra reference photo — yours may differ by harness
+
+connections:
+  - - Coil: [1, 2, 3, 4]
+    - Harness: [1, 2, 3, 4]
+  - - Harness: [1, 4]
+    - ECU: [1, 2]
+  - - Harness: 2
+    - Ground: 1
+  - - Harness: 3
+    - Battery: 1
