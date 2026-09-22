@@ -19,6 +19,7 @@ These maps are **NOT PLUG AND PLAY**. Every map will need to be configured for y
 ### ECU platform directories
 - **`haltech/`** — Haltech ECU maps and configurations
   - `R3/` — Nexus R3 (current main platform; `5-port/`, `16v/`, `dyno-reference-maps/`, `all-logs/`, `reference-maps/`)
+  - `ic7/` — Haltech IC-7 dash configuration and its 860×480 splash image
   - `E550/`, `E750/` — Elite 550 / 750 maps
   - `E1500/`, `E1000/` — Elite 1500 / 1000 reference maps (collaborator drafts)
   - `sensor-scales/` — sensor calibration data (coolant, injectors, MAP, oil, air-temp)
@@ -34,8 +35,13 @@ These maps are **NOT PLUG AND PLAY**. Every map will need to be configured for y
 - **`diagrams/`** — Wiring diagrams generated from YAML via [WireViz](https://github.com/wireviz/WireViz). Each component folder contains the `.yml` source plus the rendered `.svg` / `.png` / `.html` / `.bom.tsv`.
   - `dbw-pedal/` — Drive-by-wire pedal connections
   - `dbw-throttle/` — Drive-by-wire throttle body connections
+  - `niterra-coil-4pin/` — Niterra 4-pin smart coil (coil-on-plug) wiring
+  - `throttle-pedal-tyco-745327/` — 6-pin Tyco 6-929264-1 / Excel 745327 DBW pedal wiring
   - `tps/` — Throttle position sensor wiring
   - `trigger-sensor/` — Engine position sensor connections
+
+### Machine-readable catalog
+- **`maps.json`** — every map file (ECU, engine, role, software version, contributor), the feature support matrix below, and the WireViz diagram outputs. [classicminidiy.com/maps](https://www.classicminidiy.com/maps) reads its support table from this file. Tools and AI assistants should read this file before they guess from filenames.
 
 ### Current feature support
 | Feature             | Haltech | Speeduino | MegaSquirt | Emerald  | ECUMaster | MaxxECU | DTAFast | MegaJolt |
@@ -56,6 +62,7 @@ These maps are **NOT PLUG AND PLAY**. Every map will need to be configured for y
 | Extension                                               | Software / Purpose                                              |
 |---------------------------------------------------------|-----------------------------------------------------------------|
 | `.nexmap` (with `.nexR3-*`, `.e1500-*`, `.e1000-*`)     | Haltech NSP / ESP — Nexus R3, Elite 1500, Elite 1000            |
+| `.nexmap` (with `.ic7-*`)                               | Haltech NSP — IC-7 dash configuration                           |
 | `.htc` and Elite-versioned `.e550-*`, `.e750-*` nexmaps | Haltech ECU Manager / NSP — Elite 550 / 750                     |
 | `.msq`                                                  | TunerStudio (Speeduino / MegaSquirt) — XML-based                |
 | `.map`                                                  | Emerald EMU / DTAFast configurator                              |
