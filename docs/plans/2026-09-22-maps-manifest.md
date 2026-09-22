@@ -73,7 +73,7 @@ The README matrix stays hand-written for GitHub readers. `CLAUDE.md` makes it a 
 
 ## Site consumption
 
-- `classicminidiy/server/api/github/maps-manifest.ts` fetches `https://raw.githubusercontent.com/ClassicMiniDIY/MiniECUMaps/main/maps.json`, caches for 30 minutes, and returns `features` + `platforms` + `updated`.
+- `classicminidiy/server/api/github/maps-manifest.ts` fetches `https://raw.githubusercontent.com/ClassicMiniDIY/MiniECUMaps/main/maps.json`, caches the last valid copy per Worker instance for 30 minutes (serving it stale if a refresh fails), and returns `features` + `platforms` + `updated`.
 - `app/pages/maps.vue` builds the table from the response. Feature labels come from the page i18n keys by `features[].id`. The manifest `label` is the fallback.
 
 ## Rollout order
