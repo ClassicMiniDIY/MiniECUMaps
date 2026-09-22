@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-22",
+  "repository": "https://github.com/ClassicMiniDIY/MiniECUMaps",
+  "store": "https://store.classicminidiy.com/collections/efi-base-maps",
+  "disclaimer": "These maps are NOT PLUG AND PLAY. Every map must be configured for your specific vehicle and validated on a dyno or rolling road before any meaningful driving. Using a map without proper tuning can cause catastrophic engine failure.",
+  "statuses": {
+    "included": "In the map and working",
+    "started": "Base file checked in, not yet validated",
+    "wip": "Actively in progress",
+    "not-included": "The ECU supports it; the map does not include it yet",
+    "na": "The ECU cannot do this"
+  },
+  "features": [
+    {
+      "id": "ignitionMap",
+      "label": "Ignition Map"
+    },
+    {
+      "id": "fuelMap",
+      "label": "Fuel Map"
+    },
+    {
+      "id": "veTable",
+      "label": "VE Table"
+    },
+    {
+      "id": "targetAfr",
+      "label": "Target AFR"
+    },
+    {
+      "id": "throttleEnrichment",
+      "label": "Throttle Enrichment"
+    },
+    {
+      "id": "driveByWire",
+      "label": "Drive by Wire Ready"
+    },
+    {
+      "id": "boostControl",
+      "label": "Boost Control Map"
+    },
+    {
+      "id": "idleMap",
+      "label": "Idle Map"
+    },
+    {
+      "id": "sixteenVEngine",
+      "label": "16V Engine Version"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "haltech",
+      "name": "Haltech",
+      "directory": "haltech/",
+      "software": "Haltech NSP / ESP",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "included",
+        "veTable": "included",
+        "targetAfr": "included",
+        "throttleEnrichment": "included",
+        "driveByWire": "included",
+        "boostControl": "included",
+        "idleMap": "included",
+        "sixteenVEngine": "included"
+      }
+    },
+    {
+      "id": "speeduino",
+      "name": "Speeduino",
+      "directory": "speeduino-megasquirt/",
+      "software": "TunerStudio",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "included",
+        "veTable": "included",
+        "targetAfr": "included",
+        "throttleEnrichment": "not-included",
+        "driveByWire": "not-included",
+        "boostControl": "not-included",
+        "idleMap": "not-included",
+        "sixteenVEngine": "included"
+      }
+    },
+    {
+      "id": "megasquirt",
+      "name": "MegaSquirt",
+      "directory": "speeduino-megasquirt/",
+      "software": "TunerStudio",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "included",
+        "veTable": "included",
+        "targetAfr": "included",
+        "throttleEnrichment": "not-included",
+        "driveByWire": "not-included",
+        "boostControl": "not-included",
+        "idleMap": "not-included",
+        "sixteenVEngine": "included"
+      }
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "directory": "emerald/",
+      "software": "Emerald EMU configurator",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "included",
+        "veTable": "na",
+        "targetAfr": "included",
+        "throttleEnrichment": "na",
+        "driveByWire": "na",
+        "boostControl": "na",
+        "idleMap": "not-included",
+        "sixteenVEngine": "wip"
+      }
+    },
+    {
+      "id": "ecumaster",
+      "name": "ECUMaster",
+      "directory": "ecumaster/",
+      "software": "ECUMaster EMU Pro",
+      "features": {
+        "ignitionMap": "started",
+        "fuelMap": "started",
+        "veTable": "not-included",
+        "targetAfr": "not-included",
+        "throttleEnrichment": "not-included",
+        "driveByWire": "not-included",
+        "boostControl": "not-included",
+        "idleMap": "not-included",
+        "sixteenVEngine": "not-included"
+      }
+    },
+    {
+      "id": "maxxecu",
+      "name": "MaxxECU",
+      "directory": "maxxecu/",
+      "software": "MaxxECU MTune",
+      "features": {
+        "ignitionMap": "started",
+        "fuelMap": "started",
+        "veTable": "not-included",
+        "targetAfr": "not-included",
+        "throttleEnrichment": "not-included",
+        "driveByWire": "not-included",
+        "boostControl": "not-included",
+        "idleMap": "not-included",
+        "sixteenVEngine": "not-included"
+      }
+    },
+    {
+      "id": "dtafast",
+      "name": "DTAFast",
+      "directory": "dtafast/",
+      "software": "DTAFast configurator",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "na",
+        "veTable": "na",
+        "targetAfr": "included",
+        "throttleEnrichment": "na",
+        "driveByWire": "na",
+        "boostControl": "na",
+        "idleMap": "na",
+        "sixteenVEngine": "wip"
+      }
+    },
+    {
+      "id": "megajolt",
+      "name": "MegaJolt",
+      "directory": "megajolt/",
+      "software": "MegaJolt Lite Jr. configurator",
+      "features": {
+        "ignitionMap": "included",
+        "fuelMap": "na",
+        "veTable": "na",
+        "targetAfr": "included",
+        "throttleEnrichment": "na",
+        "driveByWire": "na",
+        "boostControl": "na",
+        "idleMap": "na",
+        "sixteenVEngine": "wip"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "haltech/R3/5-port/BadWolfTurbopm.nexR3-1-30-0.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "base",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.30.0",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/5-port/ElliotImport.nexR3-1-30-0.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "working",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.30.0",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/5-port/PostCMU.nexR3-1-30-0.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "working",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.30.0",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/16v/BadWolf16V.nexR3-1-34-3.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "16v",
+      "role": "base",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.34.3",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/dyno-reference-maps/PreDynoBadWolfTurboDBW.nexR3-1-25-4.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "dyno-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.4",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/dyno-reference-maps/PostDynoBadWolfDBW.nexR3-1-25-4.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "dyno-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.4",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/R3/dyno-reference-maps/haltech-ky/eodHaltech3rdDay.nexR3-1-28-0.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "dyno-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.28.0",
+      "contributor": "haltech-ky"
+    },
+    {
+      "path": "haltech/R3/reference-maps/elliot/Cole_Elliot_Merge.nexR3-1-26-9.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.26.9",
+      "contributor": "elliot"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/cole-james-edit-1.nexR3-1-25-4.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.4",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/disabled-zero-demand-fuel-upped-post-start-coolant-temp.nexR3-1-24-5.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.24.5",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/fuel-changes-o2-only-adds-fuel.nexR3-1-25-5.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.5",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/james-edit-2-missing-cole-changes-between.nexR3-1-25-4.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.4",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/mega-fuel-changes.nexR3-1-25-4.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.25.4",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/R3/reference-maps/james-edits/some-nudges.nexR3-1-24-5.nexmap",
+      "platform": "haltech",
+      "ecu": "Nexus R3",
+      "engine": "5-port",
+      "role": "collaborator-reference",
+      "software": "Haltech NSP",
+      "softwareVersion": "1.24.5",
+      "contributor": "james"
+    },
+    {
+      "path": "haltech/ic7/badwolf.ic7-2-34-0.nexmap",
+      "platform": "haltech",
+      "ecu": "IC-7 dash",
+      "engine": null,
+      "role": "dash",
+      "software": "Haltech NSP",
+      "softwareVersion": "2.34.0",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/E550/16A-Series.e550-3-07-1.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 550",
+      "engine": "16v",
+      "role": "base",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.07.1",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/E750/BadWolfTurbo.e750-3-07-1.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 750",
+      "engine": "5-port",
+      "role": "base",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.07.1",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/E750/ClassicMiniBase.e750-3-07-1.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 750",
+      "engine": "5-port",
+      "role": "base",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.07.1",
+      "contributor": "cole"
+    },
+    {
+      "path": "haltech/E1000/reference-maps/steve/TurboMPIBase.e1000-3-05-2.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1000",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.05.2",
+      "contributor": "steve"
+    },
+    {
+      "path": "haltech/E1500/reference-maps/elliot/PostDynoRDT.e1500-3-11-2.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1500",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.11.2",
+      "contributor": "elliot"
+    },
+    {
+      "path": "haltech/E1500/reference-maps/elliot/RDT.e1500-3-11-2.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1500",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.11.2",
+      "contributor": "elliot"
+    },
+    {
+      "path": "haltech/E1500/reference-maps/steve/20240920-Felix V6.0 new injector data.e1500-3-11-2.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1500",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.11.2",
+      "contributor": "steve"
+    },
+    {
+      "path": "haltech/E1500/reference-maps/steve/20250301-Felix V9.0 Cole map integration.e1500-3-11-3.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1500",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": "3.11.3",
+      "contributor": "steve"
+    },
+    {
+      "path": "haltech/E1500/reference-maps/steve/steve-feb-running.nexmap",
+      "platform": "haltech",
+      "ecu": "Elite 1500",
+      "engine": null,
+      "role": "collaborator-reference",
+      "software": "Haltech ESP",
+      "softwareVersion": null,
+      "contributor": "steve"
+    },
+    {
+      "path": "speeduino-megasquirt/BaseSpeeduinoMegaSquirt.msq",
+      "platform": "speeduino",
+      "ecu": "Speeduino / MegaSquirt",
+      "engine": "5-port",
+      "role": "base",
+      "software": "TunerStudio",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "speeduino-megasquirt/16vSpeeduinoMegaSquirt.msq",
+      "platform": "speeduino",
+      "ecu": "Speeduino / MegaSquirt",
+      "engine": "16v",
+      "role": "base",
+      "software": "TunerStudio",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "emerald/TurboMiniBase.map",
+      "platform": "emerald",
+      "ecu": "Emerald",
+      "engine": "5-port",
+      "role": "base",
+      "software": "Emerald EMU configurator",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "emerald/16vMiniBase.map",
+      "platform": "emerald",
+      "ecu": "Emerald",
+      "engine": "16v",
+      "role": "base",
+      "software": "Emerald EMU configurator",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "ecumaster/Classic Mini Base Map.emupro",
+      "platform": "ecumaster",
+      "ecu": "EMU Pro",
+      "engine": "5-port",
+      "role": "base",
+      "software": "ECUMaster EMU Pro",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "maxxecu/MaxxECUBaseMini.MaxxECU-save",
+      "platform": "maxxecu",
+      "ecu": "MaxxECU",
+      "engine": "5-port",
+      "role": "base",
+      "software": "MaxxECU MTune",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "dtafast/BadWolfTurbo.map",
+      "platform": "dtafast",
+      "ecu": "DTAFast S-Series",
+      "engine": "5-port",
+      "role": "base",
+      "software": "DTAFast configurator",
+      "softwareVersion": null,
+      "contributor": "cole"
+    },
+    {
+      "path": "megajolt/BaseMegaJolt.mjlj",
+      "platform": "megajolt",
+      "ecu": "MegaJolt Lite Jr.",
+      "engine": "5-port",
+      "role": "base",
+      "software": "MegaJolt Lite Jr. configurator",
+      "softwareVersion": null,
+      "contributor": "cole"
+    }
+  ],
+  "diagrams": [
+    {
+      "id": "dbw-pedal",
+      "title": "DBW Pedal Wiring",
+      "source": "diagrams/dbw-pedal/dbw-pedal.yml",
+      "svg": "diagrams/dbw-pedal/dbw-pedal.svg",
+      "png": "diagrams/dbw-pedal/dbw-pedal.png",
+      "html": "diagrams/dbw-pedal/dbw-pedal.html",
+      "bom": "diagrams/dbw-pedal/dbw-pedal.bom.tsv"
+    },
+    {
+      "id": "dbw-throttle",
+      "title": "DBW Throttle Body Wiring",
+      "source": "diagrams/dbw-throttle/dbw-throttle.yml",
+      "svg": "diagrams/dbw-throttle/dbw-throttle.svg",
+      "png": "diagrams/dbw-throttle/dbw-throttle.png",
+      "html": "diagrams/dbw-throttle/dbw-throttle.html",
+      "bom": "diagrams/dbw-throttle/dbw-throttle.bom.tsv"
+    },
+    {
+      "id": "niterra-coil-4pin",
+      "title": "Niterra 4-Pin Smart Coil Wiring",
+      "source": "diagrams/niterra-coil-4pin/niterra-coil-4pin.yml",
+      "svg": "diagrams/niterra-coil-4pin/niterra-coil-4pin.svg",
+      "png": "diagrams/niterra-coil-4pin/niterra-coil-4pin.png",
+      "html": "diagrams/niterra-coil-4pin/niterra-coil-4pin.html",
+      "bom": "diagrams/niterra-coil-4pin/niterra-coil-4pin.bom.tsv"
+    },
+    {
+      "id": "throttle-pedal-tyco-745327",
+      "title": "DBW Throttle Pedal Wiring — 6-pin Tyco 6-929264-1",
+      "source": "diagrams/throttle-pedal-tyco-745327/throttle-pedal-tyco-745327.yml",
+      "svg": "diagrams/throttle-pedal-tyco-745327/throttle-pedal-tyco-745327.svg",
+      "png": "diagrams/throttle-pedal-tyco-745327/throttle-pedal-tyco-745327.png",
+      "html": "diagrams/throttle-pedal-tyco-745327/throttle-pedal-tyco-745327.html",
+      "bom": "diagrams/throttle-pedal-tyco-745327/throttle-pedal-tyco-745327.bom.tsv"
+    },
+    {
+      "id": "tps",
+      "title": "TPS (Throttle Position Sensor) Wiring",
+      "source": "diagrams/tps/tps.yml",
+      "svg": "diagrams/tps/tps.svg",
+      "png": "diagrams/tps/tps.png",
+      "html": "diagrams/tps/tps.html",
+      "bom": "diagrams/tps/tps.bom.tsv"
+    },
+    {
+      "id": "trigger-sensor",
+      "title": "Trigger Sensor Wiring",
+      "source": "diagrams/trigger-sensor/trigger-sensor.yml",
+      "svg": "diagrams/trigger-sensor/trigger-sensor.svg",
+      "png": "diagrams/trigger-sensor/trigger-sensor.png",
+      "html": "diagrams/trigger-sensor/trigger-sensor.html",
+      "bom": "diagrams/trigger-sensor/trigger-sensor.bom.tsv"
+    }
+  ]
+}
