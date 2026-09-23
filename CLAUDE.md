@@ -28,6 +28,7 @@ The maps here are the public mirror of what's sold at https://store.classicminid
 The **only files Claude should hand-edit** are:
 - `*.yml` under `diagrams/` (WireViz sources — see workflow below)
 - `README.md`, `CLAUDE.md`, and other markdown
+- `maps.json` (the machine-readable catalog — see below)
 - `.gitignore`, `.gitattributes`, `.github/FUNDING.yml`
 
 If asked to "update a map," clarify whether the user wants the binary file replaced (they exported a new version from their tuning software) or whether they want help with the surrounding docs/diagrams.
@@ -36,7 +37,8 @@ If asked to "update a map," clarify whether the user wants the binary file repla
 
 The top-level platform directories follow `README.md`. A few sub-organizational patterns are not self-explanatory:
 
-- **All directories are kebab-case.** Haltech product names (`R3`, `E550`, `E750`, `E1500`, `E1000`) keep their proper-noun casing — everything else is lowercase.
+- **All directories are kebab-case.** Haltech product names (`R3`, `E550`, `E750`, `E1500`, `E1000`) keep their proper-noun casing — everything else is lowercase (including `ic7/`).
+- **`haltech/ic7/`** holds the Haltech IC-7 dash config (`.ic7-*.nexmap`) and its 860×480 splash PNG. A dash config is not an engine map — keep it out of `R3/5-port/` and `R3/16v/`.
 - **`haltech/R3/`** is the actively maintained platform. Subfolders:
   - `5-port/` — standard A-series 5-port head (the default Mini config)
   - `16v/` — 16-valve conversion variant (tracked separately because the entire VE/ignition table differs)
@@ -49,6 +51,17 @@ The top-level platform directories follow `README.md`. A few sub-organizational 
 - **`diagrams/`** is the only WireViz workflow in the repo (see next section).
 - **16V variants** exist across platforms with very different completion levels — see the support matrix in `README.md` before assuming a 16V map exists for a given ECU.
 
+## maps.json — the catalog contract
+
+`maps.json` at the repo root lists every map file, the platform × feature support matrix, and the WireViz diagram outputs. Design: `docs/plans/2026-09-22-maps-manifest.md`.
+
+- **classicminidiy.com/maps reads its support table from `maps.json` on `main`** (via `classicminidiy/server/api/github/maps-manifest.ts`). Renaming or removing a key breaks the live page. A breaking shape change needs a `schemaVersion` bump and a matching site change.
+- **Add, move, rename, or delete a map file → update `files[]` in the same commit.** Bump `updated`.
+- **Change the README support matrix → change `platforms[].features` in the same commit**, and the reverse. They must agree. Status map: ✅ `included`, `started`, WIP `wip`, ❌/--- `not-included`, N/A `na`.
+- **Add a WireViz diagram → add it to `diagrams[]`.**
+- Do not invent metadata. Leave `engine` / `softwareVersion` as `null` when the filename does not say.
+- Check paths after an edit: `python3 -c "import json,os;[print('MISSING',f['path']) for f in json.load(open('maps.json'))['files'] if not os.path.exists(f['path'])]"`
+
 ## Git LFS
 
 Logs under `haltech/R3/all-logs/` are tracked via Git LFS. The patterns live in `.gitattributes`:
@@ -60,7 +73,7 @@ haltech/R3/all-logs/**/*.zip     filter=lfs diff=lfs merge=lfs -text
 
 When adding a new log file, just `git add` it — the LFS filter is automatic. The LFS migration kept old blob versions in history (no force-push); to actually shrink the repo you'd run `git lfs migrate import --include="*.csv,*.hlgzip,*.zip" --everything` and force-push, which Cole has not authorized as a default.
 
-GitHub free LFS quota is 1 GB storage + 1 GB bandwidth/month. Current logs are ~692 MB — flag to Cole if you're about to add another large batch.
+GitHub free LFS quota is 1 GB storage + 1 GB bandwidth/month. Current logs are ~715 MB (2026-09-22) — flag to Cole if you're about to add another large batch.
 
 ## WireViz workflow (the only "build" in this repo)
 
