@@ -1,7 +1,7 @@
 # maps.json — machine-readable catalog of this repo
 
 **Date:** 2026-09-22
-**Status:** Implemented on `chore/repo-cleanup-sept-2026` (repo) and `fix/maps-page` (classicminidiy)
+**Status:** Merged 2026-09-22 — ClassicMiniDIY/MiniECUMaps#1 and ClassicMiniDIY/classicminidiy#896 (payload trim in #897)
 
 ## Problem
 
