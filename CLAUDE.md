@@ -49,6 +49,7 @@ The top-level platform directories follow `README.md`. A few sub-organizational 
 - **Reference maps are organized platform-first, then collaborator** (e.g. `haltech/R3/reference-maps/elliot/`, `haltech/E1500/reference-maps/steve/`). Don't relocate them back to a flat collaborator-only structure — the platform routing is intentional.
 - **`haltech/wiring-diagrams/`** is distinct from the top-level `diagrams/` directory. It holds Haltech-specific reference material (PDF/JPEG diagrams, the `D400 to Haltech.xlsx` pin-map spreadsheet, the ECU pinout `IOReport.pdf`) — *not* WireViz sources.
 - **`diagrams/`** is the only WireViz workflow in the repo (see next section).
+- **`diagrams/diagram-images/`** holds connector photos for the harness.design 16V harness (document `p7g1`). Its connector parts load each photo by a commit-pinned `raw.githubusercontent.com` URL, so the files survive later renames. To change a photo, add the new file and repoint the part; never rewrite the history that holds the old one.
 - **16V variants** exist across platforms with very different completion levels — see the support matrix in `README.md` before assuming a 16V map exists for a given ECU.
 
 ## maps.json — the catalog contract
