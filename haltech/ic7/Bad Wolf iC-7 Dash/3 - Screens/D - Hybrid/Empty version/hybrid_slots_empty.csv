@@ -1,0 +1,17 @@
+Slot,Kind,X,Y,X size,Y size,Centre,In the printed version
+Left dial,Large dial,54,58,364,364,"236, 240",Air/fuel 10–20 AFR (+ target needle)
+Left dial · LCD window,Text window,198,176,76,36,"236, 194",AFR + target
+Left dial · lower window,Bar / text window,184,370,104,26,"236, 383",Throttle position bar
+Left dial · lower window bar,Bar (behind background),192,383,88,5,"236, 385",—
+Plate 1,Data plate,475,31,170,122,"560, 92",OIL TEMP 50–150 °C
+Plate 1 · bar,Bar (behind background),486,122,148,5,"560, 124",—
+Plate 2,Data plate,667,31,170,122,"752, 92",FUEL PRESS 0–80 PSI
+Plate 2 · bar,Bar (behind background),678,122,148,5,"752, 124",—
+Plate 3,Data plate,475,179,170,122,"560, 240",AIR TEMP 0–100 °C
+Plate 3 · bar,Bar (behind background),486,270,148,5,"560, 272",—
+Plate 4,Data plate,667,179,170,122,"752, 240",BATTERY 8–16 VOLTS
+Plate 4 · bar,Bar (behind background),678,270,148,5,"752, 272",—
+Plate 5,Data plate,475,327,170,122,"560, 388",IGNITION -10–50 °BTDC
+Plate 5 · bar,Bar (behind background),486,418,148,5,"560, 420",—
+Plate 6,Data plate,667,327,170,122,"752, 388",INJ DUTY 0–100 %
+Plate 6 · bar,Bar (behind background),678,418,148,5,"752, 420",—

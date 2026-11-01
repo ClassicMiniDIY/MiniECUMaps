@@ -1,0 +1,22 @@
+Step,Component,NSP type,File,X,Y,X size,Y size,Z,Channel,Settings
+1,Background,Image,hybrid_background_day.png  (or hybrid_background_night.png),0,0,860,480,1,—,"Fill the whole screen. Above the bars, below everything else. Its see-through slots show the bars underneath."
+2,Knock lamp,Indicator,hybrid_indicator_fill_white.png,148,354,24,24,0,Knock Level above threshold,Behind background (round lens) · On #F5A00B · Off #2A2620 day / #0D0C0B night
+3,Logging lamp,Indicator,hybrid_indicator_fill_white.png,300,354,24,24,0,Datalog Switch (Keypad B5) / logging active,Behind background (round lens) · On #3FCF6A · Off #2A2620 day / #0D0C0B night
+4,AFR (LCD),Numeric gauge,,202,177,68,17,2,"Wideband O2 1 (internal WBO), as AFR",Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+5,AFR target (LCD),Numeric gauge,,202,194,68,17,2,Target AFR,Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+6,Throttle bar,Bar gauge (horizontal),,192,383,88,5,0,Throttle Position (DBW TPS 1),Behind background · Min 0 / Max 100 · fill #1D1B18 day · #F08A54 night · track #D6CDB4 day · #1D1C19 night · frame off
+7,Oil temp value,Numeric gauge,,484,58,152,54,2,Oil Temperature (AVI10),Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 0 dp
+8,Oil temp bar,Bar gauge (horizontal),,486,122,148,5,0,Oil Temperature (AVI10),Behind background · Min 50 / Max 150 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+9,Fuel press value,Numeric gauge,,676,58,152,54,2,Fuel Pressure (AVI11),Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 1 dp
+10,Fuel press bar,Bar gauge (horizontal),,678,122,148,5,0,Fuel Pressure (AVI11),Behind background · Min 0 / Max 80 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+11,Air temp value,Numeric gauge,,484,206,152,54,2,Intake Air Temperature (AVI7),Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 0 dp
+12,Air temp bar,Bar gauge (horizontal),,486,270,148,5,0,Intake Air Temperature (AVI7),Behind background · Min 0 / Max 100 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+13,Battery value,Numeric gauge,,676,206,152,54,2,ECU Supply Voltage,Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 1 dp
+14,Battery bar,Bar gauge (horizontal),,678,270,148,5,0,ECU Supply Voltage,Behind background · Min 8 / Max 16 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+15,Ignition value,Numeric gauge,,484,354,152,54,2,Ignition Angle,Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 1 dp
+16,Ignition bar,Bar gauge (horizontal),,486,418,148,5,0,Ignition Angle,Behind background · Min -10 / Max 50 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+17,Inj duty value,Numeric gauge,,676,354,152,54,2,Injector Duty Cycle (primary),Value only · Barlow Condensed SemiBold 54px · right-aligned · #1d1b18 day · #e9e2cc night · 0 dp
+18,Inj duty bar,Bar gauge (horizontal),,678,418,148,5,0,Injector Duty Cycle (primary),Behind background · Min 0 / Max 100 · fill #1d1b18 day · #f08a54 night · track #CCC5B3 day · #403D37 night · frame off
+19,Air / fuel,Dial gauge (Retro circular),hybrid_needle_large_day/night.png,58,62,356,356,4,"Wideband O2 1 (internal WBO), as AFR","Min 10 / Max 20 AFR · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (236, 240)"
+20,AFR target needle,Dial gauge (Retro circular),hybrid_needle_afrtarget_day/night.png,54,58,364,364,3,Target AFR,"Min 10 / Max 20 AFR · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (236, 240) · Sits under the main AFR needle"
+21,Air / fuel hub,Image,hybrid_hub_large.png,212,216,48,48,5,—,Round centre cap on top of the needle at the pivot. Never rotates.

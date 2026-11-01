@@ -1,0 +1,46 @@
+Slot,Kind,X,Y,X size,Y size,Centre,In the printed version
+Top 1,Tile,8,8,160,56,"88, 36",RPM value
+"Top 2 (long, for a bar)",Tile,174,8,532,56,"440, 36",RPM bar 0–8000
+Top 3,Tile,712,8,140,56,"782, 36",Speed (mph)
+"Tile 1 (row 1, col 1)",Tile,8,70,164,86,"90, 113",BOOST -10–30 PSI
+"Tile 2 (row 1, col 2)",Tile,178,70,164,86,"260, 113",BOOST TGT -10–30 PSI
+"Tile 3 (row 1, col 3)",Tile,348,70,164,86,"430, 113",GEAR 0–5 
+"Tile 4 (row 1, col 4)",Tile,518,70,164,86,"600, 113",AIR / FUEL 10–20 AFR
+"Tile 5 (row 1, col 5)",Tile,688,70,164,86,"770, 113",AFR TGT 10–20 AFR
+"Tile 6 (row 2, col 1)",Tile,8,162,164,86,"90, 205",IGNITION -10–50 °BTDC
+"Tile 7 (row 2, col 2)",Tile,178,162,164,86,"260, 205",KNOCK 0–100 LVL
+"Tile 8 (row 2, col 3)",Tile,348,162,164,86,"430, 205",KNOCK RET 0–10 °
+"Tile 9 (row 2, col 4)",Tile,518,162,164,86,"600, 205",INJ DUTY 0–100 %
+"Tile 10 (row 2, col 5)",Tile,688,162,164,86,"770, 205",INJ PW 0–20 MS
+"Tile 11 (row 3, col 1)",Tile,8,254,164,86,"90, 297",COOLANT 30–120 °C
+"Tile 12 (row 3, col 2)",Tile,178,254,164,86,"260, 297",OIL PRESS 0–100 PSI
+"Tile 13 (row 3, col 3)",Tile,348,254,164,86,"430, 297",OIL TEMP 30–150 °C
+"Tile 14 (row 3, col 4)",Tile,518,254,164,86,"600, 297",FUEL PRESS 0–80 PSI
+"Tile 15 (row 3, col 5)",Tile,688,254,164,86,"770, 297",INTAKE AIR -10–80 °C
+"Tile 16 (row 4, col 1)",Tile,8,346,164,86,"90, 389",THROTTLE 0–100 %
+"Tile 17 (row 4, col 2)",Tile,178,346,164,86,"260, 389",PEDAL 0–100 %
+"Tile 18 (row 4, col 3)",Tile,348,346,164,86,"430, 389",BRAKE FRONT 0–1500 PSI
+"Tile 19 (row 4, col 4)",Tile,518,346,164,86,"600, 389",BATTERY 10–16 V
+"Tile 20 (row 4, col 5)",Tile,688,346,164,86,"770, 389",CL TRIM -25–25 %
+Top 2 · bar,Bar (behind background),186,29,508,12,"440, 35",—
+Tile 1 · bar,Bar (behind background),18,142,144,4,"90, 144",—
+Tile 2 · bar,Bar (behind background),188,142,144,4,"260, 144",—
+Tile 3 · bar,Bar (behind background),358,142,144,4,"430, 144",—
+Tile 4 · bar,Bar (behind background),528,142,144,4,"600, 144",—
+Tile 5 · bar,Bar (behind background),698,142,144,4,"770, 144",—
+Tile 6 · bar,Bar (behind background),18,234,144,4,"90, 236",—
+Tile 7 · bar,Bar (behind background),188,234,144,4,"260, 236",—
+Tile 8 · bar,Bar (behind background),358,234,144,4,"430, 236",—
+Tile 9 · bar,Bar (behind background),528,234,144,4,"600, 236",—
+Tile 10 · bar,Bar (behind background),698,234,144,4,"770, 236",—
+Tile 11 · bar,Bar (behind background),18,326,144,4,"90, 328",—
+Tile 12 · bar,Bar (behind background),188,326,144,4,"260, 328",—
+Tile 13 · bar,Bar (behind background),358,326,144,4,"430, 328",—
+Tile 14 · bar,Bar (behind background),528,326,144,4,"600, 328",—
+Tile 15 · bar,Bar (behind background),698,326,144,4,"770, 328",—
+Tile 16 · bar,Bar (behind background),18,418,144,4,"90, 420",—
+Tile 17 · bar,Bar (behind background),188,418,144,4,"260, 420",—
+Tile 18 · bar,Bar (behind background),358,418,144,4,"430, 420",—
+Tile 19 · bar,Bar (behind background),528,418,144,4,"600, 420",—
+Tile 20 · bar,Bar (behind background),698,418,144,4,"770, 420",—
+Status strip,Open area,8,444,844,30,"430, 459","Status lamps + labels, fuel, boost trim"

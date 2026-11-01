@@ -1,0 +1,53 @@
+Step,Component,NSP type,File,X,Y,X size,Y size,Z,Channel,Settings
+1,Background,Image,diagnostic_dense_background_dark.png  (or diagnostic_dense_background_light.png),0,0,860,480,1,—,"Fill the whole screen. Above the bars, below everything else. Its see-through slots show the bars underneath."
+2,rpm value,Numeric gauge,,18,24,140,36,2,Engine Speed (RPM),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+3,rpm bar,Bar gauge (horizontal),,186,29,508,12,0,Engine Speed (RPM),Behind background · Min 0 / Max 8000 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+4,speed value,Numeric gauge,,722,24,120,36,2,Vehicle Speed (SPI1 drive train),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+5,boost value,Numeric gauge,,18,94,144,40,2,Manifold Pressure (gauge),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+6,boost bar,Bar gauge (horizontal),,18,142,144,4,0,Manifold Pressure (gauge),Behind background · Min -10 / Max 30 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+7,boost tgt value,Numeric gauge,,188,94,144,40,2,Boost Target,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+8,boost tgt bar,Bar gauge (horizontal),,188,142,144,4,0,Boost Target,Behind background · Min -10 / Max 30 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+9,gear value,Numeric gauge,,358,94,144,40,2,Gear Position (calculated from speed / RPM),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+10,gear bar,Bar gauge (horizontal),,358,142,144,4,0,Gear Position (calculated from speed / RPM),Behind background · Min 0 / Max 5 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+11,afr value,Numeric gauge,,528,94,144,40,2,Wideband O2 1 (internal WBO),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+12,afr bar,Bar gauge (horizontal),,528,142,144,4,0,Wideband O2 1 (internal WBO),Behind background · Min 10 / Max 20 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+13,afr tgt value,Numeric gauge,,698,94,144,40,2,Target AFR,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+14,afr tgt bar,Bar gauge (horizontal),,698,142,144,4,0,Target AFR,Behind background · Min 10 / Max 20 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+15,ign value,Numeric gauge,,18,186,144,40,2,Ignition Angle,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+16,ign bar,Bar gauge (horizontal),,18,234,144,4,0,Ignition Angle,Behind background · Min -10 / Max 50 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+17,knock value,Numeric gauge,,188,186,144,40,2,Knock Level (KNOCK1),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+18,knock bar,Bar gauge (horizontal),,188,234,144,4,0,Knock Level (KNOCK1),Behind background · Min 0 / Max 100 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+19,knock ret value,Numeric gauge,,358,186,144,40,2,Knock Retard,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+20,knock ret bar,Bar gauge (horizontal),,358,234,144,4,0,Knock Retard,Behind background · Min 0 / Max 10 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+21,inj value,Numeric gauge,,528,186,144,40,2,Injector Duty Cycle (primary),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+22,inj bar,Bar gauge (horizontal),,528,234,144,4,0,Injector Duty Cycle (primary),Behind background · Min 0 / Max 100 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+23,inj pw value,Numeric gauge,,698,186,144,40,2,Injection Time,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 2 dp
+24,inj pw bar,Bar gauge (horizontal),,698,234,144,4,0,Injection Time,Behind background · Min 0 / Max 20 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+25,clt value,Numeric gauge,,18,278,144,40,2,Coolant Temperature (AVI3),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+26,clt bar,Bar gauge (horizontal),,18,326,144,4,0,Coolant Temperature (AVI3),Behind background · Min 30 / Max 120 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+27,oilp value,Numeric gauge,,188,278,144,40,2,Oil Pressure (AVI4),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+28,oilp bar,Bar gauge (horizontal),,188,326,144,4,0,Oil Pressure (AVI4),Behind background · Min 0 / Max 100 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+29,oilt value,Numeric gauge,,358,278,144,40,2,Oil Temperature (AVI10),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+30,oilt bar,Bar gauge (horizontal),,358,326,144,4,0,Oil Temperature (AVI10),Behind background · Min 30 / Max 150 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+31,fuelp value,Numeric gauge,,528,278,144,40,2,Fuel Pressure (AVI11),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+32,fuelp bar,Bar gauge (horizontal),,528,326,144,4,0,Fuel Pressure (AVI11),Behind background · Min 0 / Max 80 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+33,iat value,Numeric gauge,,698,278,144,40,2,Intake Air Temperature (AVI7),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+34,iat bar,Bar gauge (horizontal),,698,326,144,4,0,Intake Air Temperature (AVI7),Behind background · Min -10 / Max 80 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+35,tps value,Numeric gauge,,18,370,144,40,2,Throttle Position (DBW TPS 1),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+36,tps bar,Bar gauge (horizontal),,18,418,144,4,0,Throttle Position (DBW TPS 1),Behind background · Min 0 / Max 100 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+37,pedal value,Numeric gauge,,188,370,144,40,2,Pedal Position (APS A/B),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+38,pedal bar,Bar gauge (horizontal),,188,418,144,4,0,Pedal Position (APS A/B),Behind background · Min 0 / Max 100 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+39,brake value,Numeric gauge,,358,370,144,40,2,Brake Pressure Front (SPI3),Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 0 dp
+40,brake bar,Bar gauge (horizontal),,358,418,144,4,0,Brake Pressure Front (SPI3),Behind background · Min 0 / Max 1500 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+41,batt value,Numeric gauge,,528,370,144,40,2,ECU Supply Voltage,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+42,batt bar,Bar gauge (horizontal),,528,418,144,4,0,ECU Supply Voltage,Behind background · Min 10 / Max 16 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+43,cl trim value,Numeric gauge,,698,370,144,40,2,Closed Loop Fuel Correction,Value only · Outfit SemiBold 32px · right-aligned · #e4e4e7 dark · #18181b light · 1 dp
+44,cl trim bar,Bar gauge (horizontal),,698,418,144,4,0,Closed Loop Fuel Correction,Behind background · Min -25 / Max 25 · fill #9aac7f dark · #859369 light · track #333337 dark · #EBEBEB light · frame off
+45,FAN pill,Indicator,diagnostic_dense_indicator_fill_white.png,8,446,48,26,0,Thermofan 1 Output (25A-HCO4),Behind background (pill; label printed) · On #9aac7f dark / #859369 light · Off #3A3A40 dark / #E4E4E4 light
+46,PUMP pill,Indicator,diagnostic_dense_indicator_fill_white.png,62,446,92,26,0,Primary Fuel Pump (PD16 25A-HCO3),Behind background (pill; label printed) · On #9aac7f dark / #859369 light · Off #3A3A40 dark / #E4E4E4 light
+47,CRUISE pill,Indicator,diagnostic_dense_indicator_fill_white.png,160,446,70,26,0,Cruise Control Enable (Keypad B1),Behind background (pill; label printed) · On #9aac7f dark / #859369 light · Off #3A3A40 dark / #E4E4E4 light
+48,LOG pill,Indicator,diagnostic_dense_indicator_fill_white.png,236,446,77,26,0,Datalog Switch (Keypad B5),Behind background (pill; label printed) · On #9aac7f dark / #859369 light · Off #3A3A40 dark / #E4E4E4 light
+49,CEL pill,Indicator,diagnostic_dense_indicator_fill_white.png,319,446,114,26,0,Check Engine Light (DPO5),Behind background (pill; label printed) · On #fbbf24 dark / #f59e0b light · Off #3A3A40 dark / #E4E4E4 light
+50,KILL pill,Indicator,diagnostic_dense_indicator_fill_white.png,439,446,77,26,0,Kill Switch Input 1 (GenCond5),Behind background (pill; label printed) · On #ef7676 dark / #b22222 light · Off #3A3A40 dark / #E4E4E4 light
+51,fuel value,Numeric gauge,,810,448,42,22,2,Fuel Level 1 (PD16 SPI4),Value only · Outfit SemiBold 18px · right-aligned · #e4e4e7 dark · #18181b light
+52,trim value,Numeric gauge,,720,448,30,22,2,Rotary Trim Module 1 (Boost Trim),Value only · Outfit SemiBold 18px · right-aligned · #e4e4e7 dark · #18181b light

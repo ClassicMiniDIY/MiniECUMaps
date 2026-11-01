@@ -1,0 +1,7 @@
+Slot,Kind,X,Y,X size,Y size,Centre,In the printed version
+Top left,Dial,43,22,200,200,"143, 122",Air/fuel 10–20 AFR
+Top centre,Dial,330,22,200,200,"430, 122",Oil temp 50–150 °C
+Top right,Dial,617,22,200,200,"717, 122",Fuel pressure 0–80 psi
+Bottom left,Dial,43,258,200,200,"143, 358",Intake air 0–100 °C
+Bottom centre,Dial,330,258,200,200,"430, 358",Volts 8–16 V
+Bottom right,Dial,617,258,200,200,"717, 358",Ignition −10–50 °BTDC

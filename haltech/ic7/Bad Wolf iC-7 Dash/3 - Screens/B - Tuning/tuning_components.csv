@@ -1,0 +1,18 @@
+Step,Component,NSP type,File,X,Y,X size,Y size,Z,Channel,Settings
+1,Background,Image,tuning_background_day.png  (or tuning_background_night.png),0,0,860,480,1,—,"Fill the whole screen. Above the bars, below everything else. Its see-through slots show the bars underneath."
+2,Knock lamp,Indicator,tuning_indicator_fill_white.png,342,354,24,24,0,Knock Level above threshold,Behind background (round lens) · On #F5A00B · Off #2A2620 day / #0D0C0B night
+3,Logging lamp,Indicator,tuning_indicator_fill_white.png,494,354,24,24,0,Datalog Switch (Keypad B5) / logging active,Behind background (round lens) · On #3FCF6A · Off #2A2620 day / #0D0C0B night
+4,AFR (LCD),Numeric gauge,,396,177,68,17,2,"Wideband O2 1 (internal WBO), as AFR",Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+5,AFR target (LCD),Numeric gauge,,396,194,68,17,2,Target AFR,Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+6,Throttle bar,Bar gauge (horizontal),,386,383,88,5,0,Throttle Position (DBW TPS 1),Behind background · Min 0 / Max 100 · fill #1D1B18 day · #F08A54 night · track #D6CDB4 day · #1D1C19 night · frame off
+7,Air / fuel,Dial gauge (Retro circular),tuning_needle_large_day/night.png,252,62,356,356,4,"Wideband O2 1 (internal WBO), as AFR","Min 10 / Max 20 AFR · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (430, 240)"
+8,AFR target needle,Dial gauge (Retro circular),tuning_needle_afrtarget_day/night.png,248,58,364,364,3,Target AFR,"Min 10 / Max 20 AFR · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (430, 240) · Sits under the main AFR needle"
+9,Oil temp,Dial gauge (Retro circular),tuning_needle_small_day/night.png,56,48,156,156,4,Oil Temperature (AVI10),"Min 50 / Max 150 °C · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (134, 126)"
+10,Fuel pressure,Dial gauge (Retro circular),tuning_needle_small_day/night.png,56,276,156,156,4,Fuel Pressure (AVI11),"Min 0 / Max 80 psi · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (134, 354)"
+11,Volts,Dial gauge (Retro circular),tuning_needle_small_day/night.png,648,48,156,156,4,ECU Supply Voltage,"Min 8 / Max 16 V · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (726, 126)"
+12,Intake air,Dial gauge (Retro circular),tuning_needle_small_day/night.png,648,276,156,156,4,Intake Air Temperature (AVI7),"Min 0 / Max 100 °C · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (726, 354)"
+13,Air / fuel hub,Image,tuning_hub_large.png,406,216,48,48,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+14,Oil temp hub,Image,tuning_hub_small.png,123,115,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+15,Fuel pressure hub,Image,tuning_hub_small.png,123,343,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+16,Volts hub,Image,tuning_hub_small.png,715,115,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+17,Intake air hub,Image,tuning_hub_small.png,715,343,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.

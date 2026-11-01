@@ -1,0 +1,14 @@
+Step,Component,NSP type,File,X,Y,X size,Y size,Z,Channel,Settings
+1,Background,Image,sixpack_background_day.png  (or sixpack_background_night.png),0,0,860,480,1,—,"Fill the whole screen. Above the bars, below everything else. Its see-through slots show the bars underneath."
+2,Air / fuel,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,47,26,192,192,4,"Wideband O2 1 (internal WBO), as AFR","Min 10 / Max 20 AFR · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (143, 122)"
+3,Oil temp,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,334,26,192,192,4,Oil Temperature (AVI10),"Min 50 / Max 150 °C · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (430, 122)"
+4,Fuel pressure,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,621,26,192,192,4,Fuel Pressure (AVI11),"Min 0 / Max 80 psi · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (717, 122)"
+5,Intake air,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,47,262,192,192,4,Intake Air Temperature (AVI7),"Min 0 / Max 100 °C · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (143, 358)"
+6,Volts,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,334,262,192,192,4,ECU Supply Voltage,"Min 8 / Max 16 V · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (430, 358)"
+7,Ignition timing,Dial gauge (Retro circular),sixpack_needle_medium_day/night.png,621,262,192,192,4,Ignition Angle,"Min -10 / Max 50 °BTDC · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (717, 358)"
+8,Air / fuel hub,Image,sixpack_hub_medium.png,130,109,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+9,Oil temp hub,Image,sixpack_hub_medium.png,417,109,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+10,Fuel pressure hub,Image,sixpack_hub_medium.png,704,109,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+11,Intake air hub,Image,sixpack_hub_medium.png,130,345,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+12,Volts hub,Image,sixpack_hub_medium.png,417,345,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+13,Ignition timing hub,Image,sixpack_hub_medium.png,704,345,26,26,5,—,Round centre cap on top of the needle at the pivot. Never rotates.

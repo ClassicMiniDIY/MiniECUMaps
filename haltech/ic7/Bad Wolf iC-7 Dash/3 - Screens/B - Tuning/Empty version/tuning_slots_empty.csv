@@ -1,0 +1,9 @@
+Slot,Kind,X,Y,X size,Y size,Centre,In the printed version
+Centre,Large dial,248,58,364,364,"430, 240",A: Speedo 10–130 mph · B: Air/fuel 10–20 AFR
+Centre · LCD window,Text window,392,176,76,36,"430, 194",A: Odometer + trip · B: AFR + target
+Centre · lower window,Bar / text window,378,370,104,26,"430, 383",A: Fuel level bar · B: Throttle position bar
+Centre · lower window bar,Bar (behind background),386,383,88,5,"430, 385",—
+Top left,Dial,54,46,160,160,"134, 126",A: Oil pressure 0–100 psi · B: Oil temp 50–150 °C
+Bottom left,Dial,54,274,160,160,"134, 354",A: Water 30–110 °C · B: Fuel pressure 0–80 psi
+Top right,Dial,646,46,160,160,"726, 126",A: Tacho 0–8000 rpm · B: Volts 8–16 V
+Bottom right,Dial,646,274,160,160,"726, 354",A: Boost −9.8–30 psi · B: Intake air 0–100 °C

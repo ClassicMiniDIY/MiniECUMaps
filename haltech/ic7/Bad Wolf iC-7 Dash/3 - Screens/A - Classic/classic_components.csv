@@ -1,0 +1,23 @@
+Step,Component,NSP type,File,X,Y,X size,Y size,Z,Channel,Settings
+1,Background,Image,classic_background_day.png  (or classic_background_night.png),0,0,860,480,1,—,"Fill the whole screen. Above the bars, below everything else. Its see-through slots show the bars underneath."
+2,HighBeam lamp,Indicator,classic_indicator_fill_white.png,342,354,24,24,0,Head Light Input (PD16 AVI2) or your high-beam channel,Behind background (round lens) · On #4F8FF7 · Off #2A2620 day / #0D0C0B night
+3,Ignition lamp,Indicator,classic_indicator_fill_white.png,494,354,24,24,0,Battery Voltage Light (PD16 HBO1),Behind background (round lens) · On #E8382C · Off #2A2620 day / #0D0C0B night
+4,TurnLeft lamp,Indicator,classic_indicator_fill_white.png,301,277,26,26,0,Left Indicator Output (PD16 8A-HCO6),Behind background (arrow) · On #3FCF6A · Off #BDB49C day / #45413A night
+5,TurnRight lamp,Indicator,classic_indicator_fill_white.png,533,277,26,26,0,Right Indicator Output (PD16 8A-HCO2),Behind background (arrow) · On #3FCF6A · Off #BDB49C day / #45413A night
+6,OilPressure lamp,Indicator,classic_indicator_fill_white.png,124,172,19,19,0,Oil Pressure Light (DPO3),Behind background (round lens) · On #E8382C · Off #2A2620 day / #0D0C0B night
+7,Fan lamp,Indicator,classic_indicator_fill_white.png,124,400,19,19,0,Thermofan 1 (25A-HCO4),Behind background (round lens) · On #A9BF86 · Off #2A2620 day / #0D0C0B night
+8,CheckEngine lamp,Indicator,classic_indicator_fill_white.png,716,172,19,19,0,Check Engine Light (DPO5),Behind background (round lens) · On #F5A00B · Off #2A2620 day / #0D0C0B night
+9,Odometer,Numeric gauge,,396,177,48,17,2,Odometer,Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+10,Trip,Numeric gauge,,416,194,48,17,2,Trip Meter,Value only · Barlow Condensed SemiBold 15px · right-aligned · #E9E04A day · #C9C03C night
+11,Fuel level bar,Bar gauge (horizontal),,386,383,88,5,0,Fuel Level 1 (PD16 SPI4),Behind background · Min 0 / Max 100 · fill #1D1B18 day · #F08A54 night · track #D6CDB4 day · #1D1C19 night · frame off
+12,Tacho peak marker (optional),Dial gauge (Retro circular),classic_needle_peakrpm_day/night.png,644,44,164,164,3,"Peak / max RPM channel, if your firmware has one","Min 0 / Max 8000 rpm · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (726, 126)"
+13,Speedometer,Dial gauge (Retro circular),classic_needle_large_day/night.png,252,62,356,356,4,Vehicle Speed (SPI1 drive train),"Min 10 / Max 130 mph · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (430, 240) · Face starts at 10 mph: to let the needle rest below 10, use Min 0 and Start −157.5°"
+14,Tachometer,Dial gauge (Retro circular),classic_needle_tacho_day/night.png,648,48,156,156,4,Engine Speed (RPM),"Min 0 / Max 8000 rpm · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (726, 126)"
+15,Oil pressure,Dial gauge (Retro circular),classic_needle_small_day/night.png,56,48,156,156,4,Oil Pressure (AVI4),"Min 0 / Max 100 psi · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (134, 126)"
+16,Water temp,Dial gauge (Retro circular),classic_needle_small_day/night.png,56,276,156,156,4,Coolant Temperature (AVI3),"Min 30 / Max 110 °C · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (134, 354)"
+17,Boost,Dial gauge (Retro circular),classic_needle_small_day/night.png,648,276,156,156,4,Manifold Pressure (OBPS 1) shown as gauge pressure,"Min -9.82 / Max 30 psi (gauge) · Start −135° · End 135° · Needle Image Offset −80% · palette off except Needle · Centre (726, 354) · Linear −20 inHg (−9.82 psi) to +30 psi; in kPa(g): −67.7 / 206.8"
+18,Speedometer hub,Image,classic_hub_large.png,406,216,48,48,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+19,Tachometer hub,Image,classic_hub_tacho.png,715,115,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+20,Oil pressure hub,Image,classic_hub_small.png,123,115,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+21,Water temp hub,Image,classic_hub_small.png,123,343,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.
+22,Boost hub,Image,classic_hub_small.png,715,343,22,22,5,—,Round centre cap on top of the needle at the pivot. Never rotates.

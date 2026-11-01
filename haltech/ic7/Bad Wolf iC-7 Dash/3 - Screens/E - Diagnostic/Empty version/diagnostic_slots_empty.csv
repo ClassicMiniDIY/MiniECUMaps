@@ -1,0 +1,30 @@
+Slot,Kind,X,Y,X size,Y size,Centre,In the printed version
+Top 1 (wide-ish),Tile,8,8,190,80,"103, 48",RPM value
+"Top 2 (long, for a bar)",Tile,204,8,472,80,"440, 48",RPM bar 0–8000
+Top 3,Tile,682,8,170,80,"767, 48",Speed (mph)
+"Tile 1 (row 1, col 1)",Tile,8,94,206,110,"111, 149",BOOST -10–30 PSI
+"Tile 2 (row 1, col 2)",Tile,220,94,206,110,"323, 149",AIR / FUEL 10–20 AFR
+"Tile 3 (row 1, col 3)",Tile,432,94,206,110,"535, 149",IGNITION -10–50 °BTDC
+"Tile 4 (row 1, col 4)",Tile,644,94,206,110,"747, 149",INJ DUTY 0–100 %
+"Tile 5 (row 2, col 1)",Tile,8,210,206,110,"111, 265",COOLANT 30–120 °C
+"Tile 6 (row 2, col 2)",Tile,220,210,206,110,"323, 265",OIL PRESS 0–100 PSI
+"Tile 7 (row 2, col 3)",Tile,432,210,206,110,"535, 265",OIL TEMP 30–150 °C
+"Tile 8 (row 2, col 4)",Tile,644,210,206,110,"747, 265",FUEL PRESS 0–80 PSI
+"Tile 9 (row 3, col 1)",Tile,8,326,206,110,"111, 381",INTAKE AIR -10–80 °C
+"Tile 10 (row 3, col 2)",Tile,220,326,206,110,"323, 381",BATTERY 10–16 V
+"Tile 11 (row 3, col 3)",Tile,432,326,206,110,"535, 381",THROTTLE 0–100 %
+"Tile 12 (row 3, col 4)",Tile,644,326,206,110,"747, 381",KNOCK 0–100 LVL
+Top 2 · bar,Bar (behind background),218,40,444,22,"440, 51",—
+Tile 1 · bar,Bar (behind background),20,180,182,6,"111, 183",—
+Tile 2 · bar,Bar (behind background),232,180,182,6,"323, 183",—
+Tile 3 · bar,Bar (behind background),444,180,182,6,"535, 183",—
+Tile 4 · bar,Bar (behind background),656,180,182,6,"747, 183",—
+Tile 5 · bar,Bar (behind background),20,296,182,6,"111, 299",—
+Tile 6 · bar,Bar (behind background),232,296,182,6,"323, 299",—
+Tile 7 · bar,Bar (behind background),444,296,182,6,"535, 299",—
+Tile 8 · bar,Bar (behind background),656,296,182,6,"747, 299",—
+Tile 9 · bar,Bar (behind background),20,412,182,6,"111, 415",—
+Tile 10 · bar,Bar (behind background),232,412,182,6,"323, 415",—
+Tile 11 · bar,Bar (behind background),444,412,182,6,"535, 415",—
+Tile 12 · bar,Bar (behind background),656,412,182,6,"747, 415",—
+Status strip,Open area,8,444,844,30,"430, 459","Status lamps + labels, fuel, boost trim"
