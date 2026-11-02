@@ -33,6 +33,7 @@ These maps are **NOT PLUG AND PLAY**. Every map will need to be configured for y
 
 ### Technical documentation
 - **`diagrams/`** — Wiring diagrams generated from YAML via [WireViz](https://github.com/wireviz/WireViz). Each component folder contains the `.yml` source plus the rendered `.svg` / `.png` / `.html` / `.bom.tsv`.
+  - `diagram-images/` — Connector photos for the harness.design 16V harness (not WireViz; no `.yml` source)
   - `dbw-pedal/` — Drive-by-wire pedal connections
   - `dbw-throttle/` — Drive-by-wire throttle body connections
   - `niterra-coil-4pin/` — Niterra 4-pin smart coil (coil-on-plug) wiring
